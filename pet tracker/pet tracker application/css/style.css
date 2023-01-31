@@ -1,0 +1,312 @@
+/* Page design 
+
+References: 
+https://www.youtube.com/watch?v=gXkqy0b4M5g&list=LL&index=1&t=1609s 
+https://www.youtube.com/watch?v=csY6KW7cIUM
+https://www.youtube.com/watch?v=VkA9aJY2MTI&t=412s
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {    
+    background-color: lightgrey;
+    background-image: url(../img/backdrop.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center;
+
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    color: black;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    height: 85px;
+}
+
+.logo {
+    width: 220px;
+    float: left;
+    padding: 17px 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-links{
+    padding-left: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    width: 64%;
+}
+
+.nav-links li{
+    padding-left: 5%;
+    padding-top: 40px;
+    list-style: none;
+}
+
+.nav-links a{
+    display: inline-block;
+    padding: 10px;
+    color: #444;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 16px
+}
+
+.nav-links a:hover{
+    border-radius: 10px;
+    background: #dedede;
+    transition: 200ms;
+}
+
+.nav-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container{
+    min-height: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#main {
+    overflow: auto;
+    padding-bottom: 170px;
+}
+
+#footer {
+    background-color: white;
+    position: relative;
+    align-content: center;
+    height: 150px;
+    margin-top: -150px;
+    clear: both;
+}
+
+#footer p{
+    padding-top: 8px;
+    font-size: 14px;
+    text-align: center;
+    color: #444;
+}
+
+#footer a{
+    color: #444;
+    text-decoration-color: #444;
+}
+
+#footer #img1 img{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 40px;
+}
+
+#footer #img2 img{
+    position: absolute;
+    top: 54px;
+    right: 8px;
+    width: 40px;
+}
+
+#footer #img3 img{
+    position: absolute;
+    top: 108px;
+    right: 8px;
+    width: 40px;
+}
+
+#footer div p{
+    position: relative;
+}
+
+nav .btn {
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 5px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+nav button:hover{
+    transition: 200ms;
+    color: #38aac2;
+}
+
+.burger{
+    margin-top: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+}
+
+.body-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#main h1{
+    padding: 10px;
+    padding-top: 50px;
+    text-align: center;
+    color: #444;
+}
+
+#main h3{
+    color: #444;
+}
+
+#main #text{
+    word-spacing: 1px;
+    background-color: whitesmoke;
+    opacity: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    color: #444
+}
+
+#main hr{
+    margin-top: 20px;
+    margin: 10px auto;
+    width: 90%; 
+}
+
+.body-container button{
+    background: white;
+    color: #000;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 15px;
+    border: none;
+    
+}
+
+#main ask-btn{
+    left: 0;
+}
+
+#main filter-btn{
+    right: 0;
+}
+
+.body-container button:hover{
+    transition: 200ms;
+    background-color: #d6d6d6;
+}
+
+.infographics{
+    text-align: center;
+    display: inline-block;
+    width: 24%;
+    padding: 10px;
+    padding-left: 40px;
+}
+
+div.dog-img{
+    text-align: center;
+}
+
+div.csr-img{
+    text-align: center;
+}
+
+.dog-img img {
+    width: 500px; 
+}
+
+.csr-img img {
+    width: 500px; 
+}
+
+div #links{
+    position: relative;
+}
+
+div #map {
+    height: 700px;
+    width: 100%;
+}
+
+#text #links #img1 img{
+    width: 40px;
+    position: relative;
+    top: 7px;
+    left: 4px
+}
+
+#text #links #img2 img{
+    width: 40px;
+    position: relative;
+    top: 8px;
+    left: 12px;
+}
+
+#text #links #img3 img{
+    width: 40px;
+    position: relative;
+    top: 8px;
+    left: 20px;
+}
+
+@media screen and (max-width:1776px){
+    .nav-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:1500px){
+    .nav-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1300px){
+    .nav-links{
+        padding-left: 4%;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        width: 61%;
+    }
+}
+
+@media screen and (max-width:1100px){
+    .nav-links{
+        padding-left: 2%;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        width: 60%;
+    }
+}

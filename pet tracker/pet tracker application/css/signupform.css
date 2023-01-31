@@ -1,0 +1,59 @@
+/* Sign up/Log in 
+
+References: 
+https://www.youtube.com/watch?v=lacpTQuE9u8&list=LL&index=2&t=473s
+
+*/
+.sign-up {
+    width: 380px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    background: #fff;
+    padding: 20px;
+    margin: 8% auto 0;
+    text-align: center;
+}
+
+.sign-up h1 {
+    color: #38aac2;
+    margin-bottom: 30px;
+}
+
+.input-box {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    border: 1px solid #999;
+    outline: none;
+}
+
+form .signup-btn {
+    color: #fff;
+    width: 90%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.signup-btn {
+    background: #38aac2;
+}
+
+form .signup-btn:hover{
+    transition: 250ms;
+    background: #DEDEDE;
+}
+
+form hr{
+    margin-top: 20px;
+    margin: 10px auto;
+    width: 80%; 
+}
+
+.logo2{
+    width: 300px;
+    
+}
