@@ -12,21 +12,21 @@ include_once 'header.php';
                     echo "<h1>Pet Location</h1>
                     <div id='map'></div>
 
-                        <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAv-Kees8SMN0bPvOcfyZlhtUThkmfdn1s&callback=loadmaps'></script>
+                        <script async src='https://maps.googleapis.com/maps/api/js?key=GoogleMapsKeyHere&callback=loadmaps'></script>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
     <script>
 
       var map;
         var x;
         function loadmaps(){
-            $.getJSON('https://api.thingspeak.com/channels/2000931/fields/1/last.json?api_key=3EKJFV6QV6R3Q9QD', function(result){
+            $.getJSON('https://api.thingspeak.com/channels/2000931/fields/1/last.json?api_key=ApiKeyHere', function(result){
         	
             var m = result;
             x=Number(m.field1);
                            //alert(x);
 
         });
-            $.getJSON('https://api.thingspeak.com/channels/2000931/fields/2/last.json?api_key=3EKJFV6QV6R3Q9QD', function(result){
+            $.getJSON('https://api.thingspeak.com/channels/2000931/fields/2/last.json?api_key=ApiKeyHere', function(result){
         	
             var m = result;
             y=Number(m.field2);
@@ -90,7 +90,7 @@ include_once 'header.php';
     
     
                         </script>
-                        <script async src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAv-Kees8SMN0bPvOcfyZlhtUThkmfdn1s&callback=initMap'></script>";
+                        <script async src='https://maps.googleapis.com/maps/api/js?key=GoogleMapsKeyHere&callback=initMap'></script>";
                 }
             ?>
             
