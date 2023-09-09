@@ -9,14 +9,14 @@
 #define dio0 2
 
 // Network ssid and password
-const char* ssid = "Fold4Hotspot"; // TALKTALKA63111   DESKTOP-BVNGC37 3356
-const char* password = ""
+const char* ssid = ""; // hidden for security
+const char* password = ""; // hidden for security
 
 WiFiClient client;
 
 // thingspeak channel id and write api key
 unsigned long channel_id = 2000931;
-const char * write_api_key = "QVU2RRPYRI7O54T1";
+const char * write_api_key = ""; // hidden for security
 
 void setup() 
 {
